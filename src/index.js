@@ -1,1 +1,3 @@
-export { default as CustomDateRangePicker } from './CustomDateRangePicker';
+import CustomDateRangePicker from './CustomDateRangePicker';
+
+export default CustomDateRangePicker;

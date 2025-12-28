@@ -1,8 +1,11 @@
 {
   "name": "@saskysamonte/ssky-custom-date-range-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A custom date range picker React component",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir dist --copy-files"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saskysamonte/ssky-custom-date-range-picker.git"
@@ -16,5 +19,15 @@
     "custom"
   ],
   "author": "saskysamonte",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5"
+  }
 }
