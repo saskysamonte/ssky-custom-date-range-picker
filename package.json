@@ -1,6 +1,6 @@
 {
   "name": "@saskysamonte/ssky-custom-date-range-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom date range picker React component",
   "main": "src/index.js",
   "repository": {
@@ -10,7 +10,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "keywords": ["react", "date-picker", "custom"],
+  "keywords": [
+    "react",
+    "date-picker",
+    "custom"
+  ],
   "author": "saskysamonte",
   "license": "MIT"
 }
