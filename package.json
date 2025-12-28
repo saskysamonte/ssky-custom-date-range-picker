@@ -1,0 +1,31 @@
+{
+  "name": "ssky-custom-date-range-picker",
+  "version": "1.0.0",
+  "description": "A customizable React date range picker with compare and preset support",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saskysamonte/ssky-custom-date-range-picker"
+  },
+  "keywords": [
+    "react",
+    "date-range",
+    "datepicker",
+    "mui",
+    "calendar"
+  ],
+  "author": "Sasky Samonte",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17",
+    "@mui/material": "^5.0.0",
+    "@mui/icons-material": "^5.0.0"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  }
+}

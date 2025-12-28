@@ -1,0 +1,181 @@
+.ssky-date-picker-wrapper {
+    position: relative;
+}
+
+.ssky-date-picker-wrapper button {
+    text-transform: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--theme-calendar-border-color);
+    background-color: var(--theme-calendar-background-color);
+}
+
+.ssky-date-picker-wrapper button:hover {
+    background-color: var(--theme-calendar-background-color-hover);
+    border-color: var(--theme-calendar-border-color);
+}
+
+.ssky-date-picker-wrapper button.ssky-apply-button {
+    color: white;
+    background-color: var(--theme-button-background-color);
+    border: 1px solid var(--theme-button-border-color);
+}
+
+.ssky-date-picker-wrapper button.ssky-apply-button.Mui-disabled {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+}
+
+.ssky-calendar-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--theme-box-background-color);
+    border-radius: 4px;
+    border: 1px solid var(--theme-box-border-color);
+    z-index: 99;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+}
+
+/* Auto-flip dropdown alignment when it overflows the right edge */
+.ssky-calendar-dropdown.ssky-align-left {
+    left: auto;
+    right: 0;
+}
+
+.ssky-calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.ssky-calendar-controls select {
+    padding: 4px 6px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--theme-calendar-border-color);
+    background-color: var(--theme-calendar-background-color);
+    background: var(--theme-box-background-color);
+}
+
+.ssky-date-presets {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.ssky-date-preset-button {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.ssky-date-preset-button:hover {
+    background-color: var(--theme-button-background-color-hover);
+    color: white;
+}
+
+.ssky-calendars {
+    display: flex;
+    gap: 20px;
+}
+
+.ssky-calendar {
+    width: 280px;
+}
+
+.ssky-month-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ssky-day-header-row {
+    text-align: center;
+}
+
+.ssky-day-header-row,
+.ssky-date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    gap: 5px;
+}
+
+.ssky-day-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 4px 5px;
+}
+
+.ssky-date-cell {
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #fafafa;
+}
+
+.ssky-date-cell:hover {
+    border: 1px solid var(--theme-calendar-border-color);
+    background-color: var(--theme-calendar-background-color-active);
+}
+
+.ssky-date-selected {
+    color: var(--theme-calendar-text-color);
+    border-radius: 4px;
+    border: 1px solid var(--theme-calendar-border-color);
+    background-color: var(--theme-calendar-background-color-active);
+}
+
+.ssky-date-in-range {
+    border: 0px solid var(--theme-calendar-border-color);
+    background-color: var(--theme-calendar-background-color-active);
+}
+
+.ssky-date-disabled {
+    color: #CCCCCC;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #F8F8F8;
+}
+
+.ssky-date-compare-selected {
+    color: var(--theme-calendar-text-color);
+    border-radius: 4px;
+    border: 1px solid var(--theme-calendar-border-color);
+    background-color: var(--theme-calendar-background-color-active);
+}
+
+.ssky-apply-cancel-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.ssky-cancel-button {
+    padding: 4px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.ssky-cancel-button:hover {
+    background-color: #e0e0e0;
+}
